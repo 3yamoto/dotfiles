@@ -123,6 +123,7 @@ bindkey '^]' peco-src
 
 # pipenv
 eval "$(pipenv --completion)"
+export PIPENV_VENV_IN_PROJECT=1
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
