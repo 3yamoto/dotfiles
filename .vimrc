@@ -17,8 +17,8 @@ set clipboard+=unnamed
 set number
 " 行末の1文字先までカーソルを移動できるように
 set virtualedit=onemore
-" インデントはスマートインデント
-set smartindent
+" インデント
+set autoindent
 " ビープ音を可視化
 set visualbell
 " 括弧入力時の対応する括弧を表示
@@ -38,9 +38,9 @@ set list listchars=tab:\▸\-
 " Tab文字を半角スペースにする
 set expandtab
 " 行頭以外のTab文字の表示幅（スペースいくつ分）
-set tabstop=2
+set tabstop=4
 " 行頭でのTab文字の表示幅
-set shiftwidth=2
+set shiftwidth=4
 
 " 検索文字列が小文字の場合は大文字小文字を区別なく検索する
 set ignorecase
