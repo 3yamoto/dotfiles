@@ -68,7 +68,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git poetry)
 
 HISTSIZE=100000
 
@@ -124,6 +124,9 @@ bindkey '^]' peco-src
 # pipenv
 eval "$(pipenv --completion)"
 export PIPENV_VENV_IN_PROJECT=1
+
+# poetry
+export PATH="$HOME/.poetry/bin:$PATH"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
