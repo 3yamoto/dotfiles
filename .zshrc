@@ -121,6 +121,15 @@ function peco-src () {
 zle -N peco-src
 bindkey '^]' peco-src
 
+# history + peco
+function peco-select-history() {
+  BUFFER="$(history -nr 1 | awk '!a[$0]++' | peco --query "$LBUFFER" | sed 's/\\n/\n/')"
+  CURSOR=$#BUFFER             # カーソルを文末に移動
+  zle -R -c                   # refresh
+}
+zle -N peco-select-history
+bindkey '^R' peco-select-history
+
 # pipenv
 eval "$(pipenv --completion)"
 export PIPENV_VENV_IN_PROJECT=1
