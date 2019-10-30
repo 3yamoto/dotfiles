@@ -148,3 +148,6 @@ export PATH="./node_modules/.bin:$PATH"
 # direnv
 eval "$(direnv hook zsh)"
 
+export NODE_VERSIONS=~/.nvm/versions/node
+export NODE_VERSION_PREFIX=v
+
