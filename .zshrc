@@ -102,6 +102,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 alias src='source ~/.zshrc'
+alias rm='rm -i'
 
 export EDITOR=vim
 
