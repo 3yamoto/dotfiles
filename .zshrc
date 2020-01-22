@@ -152,3 +152,6 @@ eval "$(direnv hook zsh)"
 export NODE_VERSIONS=~/.nvm/versions/node
 export NODE_VERSION_PREFIX=v
 
+# tmux
+[[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
+
