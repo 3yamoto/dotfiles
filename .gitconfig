@@ -2,7 +2,15 @@
 	name = t3yamoto
 	email = 3yamoto.dev@gmail.com
 [ghq]
+	root = ~/dev-work/src
 	root = ~/dev/src
+	user = t3yamoto
+[ghq "https://github.com/serverworks-annex"]
+	root = ~/dev-work/src
+[ghq "https://git-codecommit.ap-northeast-1.amazonaws.com"]
+	root = ~/dev-work/src
+[includeIf "gitdir:~/dev-work/src"]
+	path = ~/dev-work/.gitconfig
 [init]
 	templatedir = ~/.git-templates/git-secrets
 [secrets]
@@ -12,3 +20,6 @@
 	patterns = (\"|')?(AWS|aws|Aws)?_?(ACCOUNT|account|Account)_?(ID|id|Id)?(\"|')?\\s*(:|=>|=)\\s*(\"|')?[0-9]{4}\\-?[0-9]{4}\\-?[0-9]{4}(\"|')?
 	allowed = AKIAIOSFODNN7EXAMPLE
 	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+[url "https://"]
+	insteadOf = git://
+
