@@ -9,6 +9,8 @@
 	root = ~/dev-work/src
 [ghq "https://git-codecommit.ap-northeast-1.amazonaws.com"]
 	root = ~/dev-work/src
+[ghq "https://swx.backlog.jp"]
+	root = ~/dev-work/src
 [includeIf "gitdir:~/dev-work/src"]
 	path = ~/dev-work/.gitconfig
 [init]

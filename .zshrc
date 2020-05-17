@@ -155,3 +155,4 @@ export NODE_VERSION_PREFIX=v
 # tmux
 [[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
 
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
