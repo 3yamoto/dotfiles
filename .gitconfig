@@ -1,20 +1,26 @@
 [user]
 	name = t3yamoto
 	email = 3yamoto.dev@gmail.com
+
 [ghq]
 	root = ~/dev-work/src
 	root = ~/dev/src
 	user = t3yamoto
+
 [ghq "https://github.com/serverworks-annex"]
 	root = ~/dev-work/src
-[ghq "https://git-codecommit.ap-northeast-1.amazonaws.com"]
+[ghq "https://git-codecommit.*.amazonaws.com"]
 	root = ~/dev-work/src
-[ghq "https://swx.backlog.jp"]
+[ghq "https://*.backlog.*"]
 	root = ~/dev-work/src
-[includeIf "gitdir:~/dev-work/src"]
-	path = ~/dev-work/.gitconfig
+
+
+[includeIf "gitdir:~/dev-work/"]
+	path = ~/.gitconfig_work
+
 [init]
 	templatedir = ~/.git-templates/git-secrets
+	defaultBranch = main
 [secrets]
 	providers = git secrets --aws-provider
 	patterns = (A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}
